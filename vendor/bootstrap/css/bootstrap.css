@@ -7,7 +7,8 @@
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background-color: #FFFFFF;
 }
 body {
   margin: 0;
@@ -93,7 +94,7 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 0;
+  height: 0px;
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
@@ -1147,7 +1148,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 5px solid #C22727;
 }
 .sr-only {
   position: absolute;
