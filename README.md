@@ -3,4 +3,4 @@
 
 Web site : https://meowlucian.github.io/Web_Calculator_App/
 
-<img src="img/GUI.PNG" width="600">
+<img src="img/GUI.PNG" width="600" style="border:5px black;">
