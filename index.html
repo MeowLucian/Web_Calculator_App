@@ -21,34 +21,34 @@
             <form name="calc">
                 <input type="text" class="form-control" name="output" placeholder="0" />
                 <br/>
-                <input type="button" class='btn btn-primary' value=" 1 " />
-                <input type="button" class='btn btn-primary' value=" 2 " />
-                <input type="button" class='btn btn-primary' value=" 3 " />
-                <input type="button" class='btn btn-primary' value=" / " />
+                <input type="button" class='btn-primary' value=" 1 " onclick="document.calc.output.value+='1'"/>
+                <input type="button" class='btn-primary' value=" 2 " onclick="document.calc.output.value+='2'"/>
+                <input type="button" class='btn-primary' value=" 3 " onclick="document.calc.output.value+='3'"/>
+                <input type="button" class='btn-primary' value=" / " onclick="document.calc.output.value+='/'"/>
 
                 <br/>
-                <input type="button" class='btn btn-primary' value=" 4 " />
-                <input type="button" class='btn btn-primary' value=" 5 " />
-                <input type="button" class='btn btn-primary' value=" 6 " />
-                <input type="button" class='btn btn-primary' value=" * " />
+                <input type="button" class='btn-primary' value=" 4 " onclick="document.calc.output.value+='4'"/>
+                <input type="button" class='btn-primary' value=" 5 " onclick="document.calc.output.value+='5'"/>
+                <input type="button" class='btn-primary' value=" 6 " onclick="document.calc.output.value+='6'"/>
+                <input type="button" class='btn-primary' value=" X " onclick="document.calc.output.value+='*'"/>
                 
                 <br/>
-                <input type="button" class='btn btn-primary' value=" 7 " />
-                <input type="button" class='btn btn-primary' value=" 8 " />
-                <input type="button" class='btn btn-primary' value=" 9 " />
-                <input type="button" class='btn btn-primary' value=" - " />
+                <input type="button" class='btn-primary' value=" 7 " onclick="document.calc.output.value+='7'"/>
+                <input type="button" class='btn-primary' value=" 8 " onclick="document.calc.output.value+='8'"/>
+                <input type="button" class='btn-primary' value=" 9 " onclick="document.calc.output.value+='9'"/>
+                <input type="button" class='btn-primary' value=" - " onclick="document.calc.output.value+='-'"/>
                 
                 <br/>
-                <input type="button" class='btn btn-primary' value=" ( " />
-                <input type="button" class='btn btn-primary' value=" ) " />
-                <input type="button" class='btn btn-primary' value=" 0 " />
-                <input type="button" class='btn btn-primary' value=" + " />
+                <input type="button" class='btn-primary' value=" ( " onclick="document.calc.output.value+='('"/>
+                <input type="button" class='btn-primary' value=" ) " onclick="document.calc.output.value+=')'"/>
+                <input type="button" class='btn-primary' value=" 0 " onclick="document.calc.output.value+='0'"/>
+                <input type="button" class='btn-primary' value=" + " onclick="document.calc.output.value+='+'"/>
                 
                 <br/>
-                <input type="button" class='btn btn-primary' value=" C " />
-                <input type="button" class='btn btn-primary' value=" . " />
-                <input type="button" class='btn btn-primary' value=" = " />
-                <input type="button" class='btn btn-primary' value=" % " />
+                <input type="button" class='btn-primary' value=" C " onclick="document.calc.output.value=''"/>
+                <input type="button" class='btn-primary' value=" . " onclick="document.calc.output.value+='.'"/>
+                <input type="button" class='btn-primary' value=" = " onclick="document.calc.output.value=eval(document.calc.output.value)"/>
+                <input type="button" class='btn-primary' value=" % " onclick="document.calc.output.value+='%'"/>
             </form>
         </div>
     <br/><hr/>
@@ -56,14 +56,12 @@
     <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
 </body>
 
 </html>
